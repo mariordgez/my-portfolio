@@ -19,12 +19,16 @@ hr {
 }
 
 header {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   background-color: #3c3a39;
   color: white;
+  z-index: 13;
 }
 
 #desktop-nav,
@@ -151,6 +155,7 @@ main {
   flex-direction: column;
   background-color: #e5e5e5;
   padding: 10%;
+  z-index: 13;
 }
 
 #projects h2 {
@@ -416,6 +421,11 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
+.trim {
+  overflow: hidden;
+  max-height: 100px;
+}
+
 @media all and (min-width: 720px) {
   .top-social {
     flex-direction: column;
@@ -431,12 +441,12 @@ textarea {
   .desktop-icon {
     position: absolute;
     height: 768.4791662539425px;
-    width: 1001.809054970883px;
-    left: 966.68115234375px;
+    left: 701px;
     top: 0px;
     border-radius: 0px;
+    display: block;
+    z-index: 12;
 
-    transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
     display: block;
   }
 
@@ -472,6 +482,9 @@ textarea {
     transition: 350ms;
   }
 
+  .body {
+    overflow: hidden;
+  }
   .nav-link:hover {
     border: 1px solid #d2d5db;
   }
