@@ -269,16 +269,12 @@ li {
   background-image: url("../media/png/scrapper.png");
 }
 
-.weather {
-  background-image: url("../media/png/weather.png");
+.post {
+  background-image: url("../media/png/post.png");
 }
 
 .conference {
   background-image: url("../media/png/conference.png");
-}
-
-.katchy {
-  background-image: url("../media/png/katchy.png");
 }
 
 .project-stacks {
@@ -458,6 +454,18 @@ textarea {
     position: absolute;
     height: 768.4791662539425px;
     left: 701px;
+    top: 0px;
+    border-radius: 0px;
+    display: block;
+    z-index: 12;
+
+    display: block;
+  }
+
+  .desktop-icon-2 {
+    position: absolute;
+    height: 768.4791662539425px;
+    left: 635px;
     top: 0px;
     border-radius: 0px;
     display: block;
