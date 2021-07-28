@@ -573,6 +573,7 @@ textarea {
   }
 
   #contact h2 {
+    text-align: left;
     width: 30vw;
   }
 
